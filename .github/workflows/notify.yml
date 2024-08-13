@@ -1,0 +1,15 @@
+name: Notify on Failure
+
+on:
+  workflow_run:
+    workflows: ["Backup", "Code Review Alerts"]
+    types:
+      - completed
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    if: ${{ failure() }}
+    steps:
+      - name: Send failure notification
+        run: echo "Workflow failed" | mail -s "GitHub Workflow Failed" affiliatework2016@gmail.com
