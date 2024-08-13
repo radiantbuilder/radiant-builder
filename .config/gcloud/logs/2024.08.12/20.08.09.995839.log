@@ -1,0 +1,27 @@
+2024-08-12 20:08:09,997 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-08-12 20:08:10,044 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2024-08-12 20:08:10,047 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "still-totality-432312-r8"]
+2024-08-12 20:08:10,124 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/120753539852-compute@developer.gserviceaccount.com/?recursive=true
+2024-08-12 20:08:10,126 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2024-08-12 20:08:10,128 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/120753539852-compute@developer.gserviceaccount.com/?recursive=true HTTP/1.1" 200 142
+2024-08-12 20:08:10,128 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/120753539852-compute@developer.gserviceaccount.com/token
+2024-08-12 20:08:10,148 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/120753539852-compute@developer.gserviceaccount.com/token HTTP/1.1" 200 872
+2024-08-12 20:08:10,166 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-08-12 20:08:10,406 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/still-totality-432312-r8?alt=json HTTP/1.1" 403 None
+2024-08-12 20:08:10,408 DEBUG    root            Chosen display Format:default
+2024-08-12 20:08:10,426 WARNING  root            [120753539852-compute@developer.gserviceaccount.com] does not have permission to access projects instance [still-totality-432312-r8] (or it may not exist): Cloud Resource Manager API has not been used in project 120753539852 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=120753539852 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry. This command is authenticated as 120753539852-compute@developer.gserviceaccount.com which is the active account specified by the [core/account] property.
+- '@type': type.googleapis.com/google.rpc.Help
+  links:
+  - description: Google developers console API activation
+    url: https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=120753539852
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadata:
+    consumer: projects/120753539852
+    service: cloudresourcemanager.googleapis.com
+  reason: SERVICE_DISABLED
+2024-08-12 20:08:33,795 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

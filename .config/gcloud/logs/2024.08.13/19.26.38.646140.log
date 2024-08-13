@@ -1,0 +1,90 @@
+2024-08-13 19:26:38,706 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2024-08-13 19:26:38,714 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall_rules']
+2024-08-13 19:26:38,733 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall-rules', 'create']
+2024-08-13 19:26:38,920 DEBUG    root            Running [gcloud.compute.firewall-rules.create] with arguments: [--allow: "['tcp:8080']", --description: "Allow port 8080 traffic", --direction: "INGRESS", --priority: "1000", --project: "still-totality-432312-r8", --target-tags: "['http-server']", NAME: "allow-http-8080"]
+2024-08-13 19:26:38,997 INFO     ___FILE_ONLY___ Creating firewall...
+2024-08-13 19:26:39,000 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-08-13 19:26:39,531 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/still-totality-432312-r8/global/firewalls?alt=json HTTP/1.1" 200 None
+2024-08-13 19:26:39,540 DEBUG    root            Operations to inspect: [(<Operation
+ id: 8415357390120422784
+ insertTime: '2024-08-13T12:26:39.370-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1723577199093-61f9596b1e657-b1793556-e004ac3f'
+ operationType: 'insert'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/still-totality-432312-r8/global/operations/operation-1723577199093-61f9596b1e657-b1793556-e004ac3f'
+ startTime: '2024-08-13T12:26:39.374-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 8591253450696035712
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/still-totality-432312-r8/global/firewalls/allow-http-8080'
+ user: '120753539852-compute@developer.gserviceaccount.com'
+ warnings: []>, 3)]
+2024-08-13 19:26:39,542 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-08-13 19:26:44,827 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/still-totality-432312-r8/global/operations/operation-1723577199093-61f9596b1e657-b1793556-e004ac3f/wait?alt=json HTTP/1.1" 200 None
+2024-08-13 19:26:44,831 DEBUG    root            Operations to inspect: [(<Operation
+ endTime: '2024-08-13T12:26:44.595-07:00'
+ id: 8415357390120422784
+ insertTime: '2024-08-13T12:26:39.370-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1723577199093-61f9596b1e657-b1793556-e004ac3f'
+ operationType: 'insert'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/still-totality-432312-r8/global/operations/operation-1723577199093-61f9596b1e657-b1793556-e004ac3f'
+ startTime: '2024-08-13T12:26:39.374-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 8591253450696035712
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/still-totality-432312-r8/global/firewalls/allow-http-8080'
+ user: '120753539852-compute@developer.gserviceaccount.com'
+ warnings: []>, 3)]
+2024-08-13 19:26:44,831 INFO     ___FILE_ONLY___ Created [https://www.googleapis.com/compute/v1/projects/still-totality-432312-r8/global/firewalls/allow-http-8080].
+
+2024-08-13 19:26:44,833 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-08-13 19:26:45,058 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/still-totality-432312-r8/global/firewalls/allow-http-8080?alt=json HTTP/1.1" 200 None
+2024-08-13 19:26:45,063 DEBUG    root            Chosen display Format:    table(
+      name,
+      network.basename(),
+      direction,
+      priority,
+      allowed[].map().firewall_rule().list():label=ALLOW,
+      denied[].map().firewall_rule().list():label=DENY,
+      disabled
+    )
+2024-08-13 19:26:45,064 INFO     root            Display format: "    table(
+      name,
+      network.basename(),
+      direction,
+      priority,
+      allowed[].map().firewall_rule().list():label=ALLOW,
+      denied[].map().firewall_rule().list():label=DENY,
+      disabled
+    )"
+2024-08-13 19:26:45,114 INFO     root            cache collection=compute.firewalls api_version=v1 params=['project', 'firewall']
+2024-08-13 19:26:45,205 INFO     ___FILE_ONLY___ NAME
+2024-08-13 19:26:45,205 INFO     ___FILE_ONLY___              
+2024-08-13 19:26:45,205 INFO     ___FILE_ONLY___ NETWORK
+2024-08-13 19:26:45,206 INFO     ___FILE_ONLY___   
+2024-08-13 19:26:45,206 INFO     ___FILE_ONLY___ DIRECTION
+2024-08-13 19:26:45,206 INFO     ___FILE_ONLY___   
+2024-08-13 19:26:45,206 INFO     ___FILE_ONLY___ PRIORITY
+2024-08-13 19:26:45,206 INFO     ___FILE_ONLY___   
+2024-08-13 19:26:45,206 INFO     ___FILE_ONLY___ ALLOW
+2024-08-13 19:26:45,206 INFO     ___FILE_ONLY___      
+2024-08-13 19:26:45,207 INFO     ___FILE_ONLY___ DENY
+2024-08-13 19:26:45,207 INFO     ___FILE_ONLY___   
+2024-08-13 19:26:45,207 INFO     ___FILE_ONLY___ DISABLED
+2024-08-13 19:26:45,207 INFO     ___FILE_ONLY___ 
+
+2024-08-13 19:26:45,207 INFO     ___FILE_ONLY___ allow-http-8080
+2024-08-13 19:26:45,207 INFO     ___FILE_ONLY___   
+2024-08-13 19:26:45,207 INFO     ___FILE_ONLY___ default
+2024-08-13 19:26:45,207 INFO     ___FILE_ONLY___   
+2024-08-13 19:26:45,207 INFO     ___FILE_ONLY___ INGRESS
+2024-08-13 19:26:45,207 INFO     ___FILE_ONLY___     
+2024-08-13 19:26:45,207 INFO     ___FILE_ONLY___ 1000
+2024-08-13 19:26:45,207 INFO     ___FILE_ONLY___       
+2024-08-13 19:26:45,207 INFO     ___FILE_ONLY___ tcp:8080
+2024-08-13 19:26:45,207 INFO     ___FILE_ONLY___         
+2024-08-13 19:26:45,208 INFO     ___FILE_ONLY___ False
+2024-08-13 19:26:45,208 INFO     ___FILE_ONLY___ 
+
+2024-08-13 19:26:45,208 DEBUG    root            SDK update checks are disabled.

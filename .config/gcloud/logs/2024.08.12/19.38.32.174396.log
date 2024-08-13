@@ -1,0 +1,484 @@
+2024-08-12 19:38:32,175 DEBUG    root            Loaded Command Group: ['gcloud', 'topic']
+2024-08-12 19:38:32,177 DEBUG    root            Running [gcloud.topic] with arguments: [--help: "None"]
+2024-08-12 19:38:32,178 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'datetimes']
+2024-08-12 19:38:32,179 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'client_certificate']
+2024-08-12 19:38:32,180 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'gcloudignore']
+2024-08-12 19:38:32,181 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'endpoint_override']
+2024-08-12 19:38:32,182 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'command_conventions']
+2024-08-12 19:38:32,184 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'arg_files']
+2024-08-12 19:38:32,185 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'resource_keys']
+2024-08-12 19:38:32,186 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'cli_trees']
+2024-08-12 19:38:32,187 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'flags_file']
+2024-08-12 19:38:32,188 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'uninstall']
+2024-08-12 19:38:32,190 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'projections']
+2024-08-12 19:38:32,192 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'filters']
+2024-08-12 19:38:32,192 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'accessibility']
+2024-08-12 19:38:32,194 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'configurations']
+2024-08-12 19:38:32,196 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'startup']
+2024-08-12 19:38:32,197 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'offline_help']
+2024-08-12 19:38:32,198 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'escaping']
+2024-08-12 19:38:32,199 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'formats']
+2024-08-12 19:38:32,206 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'topic']
+2024-08-12 19:38:32,207 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'topic']
+2024-08-12 19:38:32,209 DEBUG    root            Loaded Command Group: ['gcloud', 'firebase']
+2024-08-12 19:38:32,213 DEBUG    root            Loaded Command Group: ['gcloud', 'firebase', 'test']
+2024-08-12 19:38:32,218 INFO     ___FILE_ONLY___ [m
+2024-08-12 19:38:32,218 INFO     ___FILE_ONLY___ [1mNAME[m
+
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___    
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___  gcloud
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___  topic
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___  -
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___  gcloud
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___  supplementary
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___  help
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___ 
+
+
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___ [m
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___ [1mDESCRIPTION[m
+
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___    
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___ The
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___ gcloud
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,219 INFO     ___FILE_ONLY___ topic
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___ command
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___ group
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___ provides
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___ supplementary
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___ help
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___ for
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___ topics
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___ not
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___     
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___ directly
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,220 INFO     ___FILE_ONLY___ associated
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___ with
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___ individual
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___ commands.
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___    
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___ More
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___ information
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___ on
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___ gcloud
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___ topic
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,221 INFO     ___FILE_ONLY___ can
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___ be
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___ found
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___ by
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___ running:
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___         $ gcloud topic [TOPIC_NAME]
+
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___    
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___ For
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___ a
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___ list
+2024-08-12 19:38:32,222 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___ of
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___ available
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___ topics
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___ run:
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___         $ gcloud topic --help
+
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___ [m
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___ [1mTOPICS[m
+
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___    
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___ The
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___ supplementary
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___ help
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___ topics
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,223 INFO     ___FILE_ONLY___ are:
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___      [1maccessibility[m
+
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___ Reference
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___ for
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___ [1mAccessibility[m
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___ features.
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,224 INFO     ___FILE_ONLY___      [1marg-files[m
+
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___ Supplementary
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___ help
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___ for
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___ arg-files
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___ to
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___ be
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___ used
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___ with
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___ [1mgcloud
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___ firebase
+2024-08-12 19:38:32,225 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___ test[m.
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___      [1mcli-trees[m
+
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___ CLI
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___ trees
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___ supplementary
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___ help.
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___      [1mclient-certificate[m
+
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,226 INFO     ___FILE_ONLY___ Client
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___ certificate
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___ authorization
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___ supplementary
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___ help.
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___      [1mcommand-conventions[m
+
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___ gcloud
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___ command
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___ conventions
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___ supplementary
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___ help.
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,227 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___      [1mconfigurations[m
+
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___ Supplementary
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___ help
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___ for
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___ named
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___ configurations.
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___      [1mdatetimes[m
+
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___ Date/time
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___ input
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,228 INFO     ___FILE_ONLY___ format
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___ supplementary
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___ help.
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___      [1mendpoint-override[m
+
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___ gcloud
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___ endpoint
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___ override
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___ supplementary
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___ help.
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,229 INFO     ___FILE_ONLY___      [1mescaping[m
+
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___ List/dictionary-type
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___ argument
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___ escaping
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___ supplementary
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___ help.
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___      [1mfilters[m
+
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___ Resource
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___ filters
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___ supplementary
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,230 INFO     ___FILE_ONLY___ help.
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___      [1mflags-file[m
+
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___ --flags-file=YAML_FILE
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___ supplementary
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___ help.
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___      [1mformats[m
+
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___ Resource
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___ formats
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___ supplementary
+2024-08-12 19:38:32,231 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___ help.
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___      [1mgcloudignore[m
+
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___ Reference
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___ for
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___ [1m.gcloudignore[m
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___ files.
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___      [1moffline-help[m
+
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___ Setting
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,232 INFO     ___FILE_ONLY___ up
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___ gcloud
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___ command
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___ offline
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___ help.
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___      [1mprojections[m
+
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___ Resource
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___ projections
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___ supplementary
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___ help.
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,233 INFO     ___FILE_ONLY___      [1mresource-keys[m
+
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___ Resource
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___ keys
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___ supplementary
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___ help.
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___      [1mstartup[m
+
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___ Supplementary
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___ help
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___ for
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___ gcloud
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,234 INFO     ___FILE_ONLY___ startup
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___ options.
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___      [1muninstall[m
+
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___        
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___ Supplementary
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___ help
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___ for
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___ uninstalling
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___ Google
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___ Cloud
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___ CLI.
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,235 INFO     ___FILE_ONLY___ [m
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___ [1mNOTES[m
+
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___    
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___ These
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___ variants
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___ are
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___ also
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___  
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___ available:
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___         $ gcloud alpha topic
+
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,236 INFO     ___FILE_ONLY___         $ gcloud beta topic
+
+2024-08-12 19:38:32,237 INFO     ___FILE_ONLY___ 
+
+2024-08-12 19:38:32,237 INFO     ___FILE_ONLY___ [m

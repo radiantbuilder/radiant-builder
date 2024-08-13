@@ -1,0 +1,51 @@
+2024-08-13 18:56:43,213 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2024-08-13 18:56:43,218 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2024-08-13 18:56:43,237 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'delete']
+2024-08-13 18:56:43,240 DEBUG    root            Running [gcloud.compute.instances.delete] with arguments: [--project: "still-totality-432312-r8", --zone: "us-central1-a", INSTANCE_NAMES:1: "['radiant-instance']"]
+2024-08-13 18:56:43,322 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/120753539852-compute@developer.gserviceaccount.com/?recursive=true
+2024-08-13 18:56:43,325 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2024-08-13 18:56:43,327 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/120753539852-compute@developer.gserviceaccount.com/?recursive=true HTTP/1.1" 200 142
+2024-08-13 18:56:43,328 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/120753539852-compute@developer.gserviceaccount.com/token
+2024-08-13 18:56:43,331 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/120753539852-compute@developer.gserviceaccount.com/token HTTP/1.1" 200 864
+2024-08-13 18:56:43,502 DEBUG    root            Chosen display Format:list[title="The following instances will be deleted. Any attached disks configured to be auto-deleted will be deleted unless they are attached to any other instances or the `--keep-disks` flag is given and specifies them for keeping. Deleting a disk is irreversible and any data on the disk will be lost.",always-display-title]
+2024-08-13 18:56:53,504 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-08-13 18:56:53,994 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "DELETE /compute/v1/projects/still-totality-432312-r8/zones/us-central1-a/instances/radiant-instance?alt=json HTTP/1.1" 200 None
+2024-08-13 18:56:53,998 DEBUG    root            Operations to inspect: [(<Operation
+ id: 4725086837601079962
+ insertTime: '2024-08-13T11:56:53.891-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1723575413582-61f952c452b6a-31e41591-69b5a78f'
+ operationType: 'delete'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/still-totality-432312-r8/zones/us-central1-a/operations/operation-1723575413582-61f952c452b6a-31e41591-69b5a78f'
+ startTime: '2024-08-13T11:56:53.906-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 143010070309294525
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/still-totality-432312-r8/zones/us-central1-a/instances/radiant-instance'
+ user: '120753539852-compute@developer.gserviceaccount.com'
+ warnings: []
+ zone: 'https://www.googleapis.com/compute/v1/projects/still-totality-432312-r8/zones/us-central1-a'>, 3)]
+2024-08-13 18:56:54,001 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-08-13 18:57:44,750 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/still-totality-432312-r8/zones/us-central1-a/operations/operation-1723575413582-61f952c452b6a-31e41591-69b5a78f/wait?alt=json HTTP/1.1" 200 None
+2024-08-13 18:57:44,752 DEBUG    root            Operations to inspect: [(<Operation
+ endTime: '2024-08-13T11:57:44.671-07:00'
+ id: 4725086837601079962
+ insertTime: '2024-08-13T11:56:53.891-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1723575413582-61f952c452b6a-31e41591-69b5a78f'
+ operationType: 'delete'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/still-totality-432312-r8/zones/us-central1-a/operations/operation-1723575413582-61f952c452b6a-31e41591-69b5a78f'
+ startTime: '2024-08-13T11:56:53.906-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 143010070309294525
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/still-totality-432312-r8/zones/us-central1-a/instances/radiant-instance'
+ user: '120753539852-compute@developer.gserviceaccount.com'
+ warnings: []
+ zone: 'https://www.googleapis.com/compute/v1/projects/still-totality-432312-r8/zones/us-central1-a'>, 3)]
+2024-08-13 18:57:44,753 INFO     ___FILE_ONLY___ Deleted [https://www.googleapis.com/compute/v1/projects/still-totality-432312-r8/zones/us-central1-a/instances/radiant-instance].
+
+2024-08-13 18:57:44,753 DEBUG    root            Chosen display Format:none
+2024-08-13 18:57:44,753 INFO     root            Display format: "none"
+2024-08-13 18:57:44,764 INFO     root            cache collection=compute.instances api_version=v1 params=['project', 'zone', 'instance']
+2024-08-13 18:57:44,810 DEBUG    root            SDK update checks are disabled.

@@ -1,0 +1,18 @@
+2024-08-12 19:40:47,022 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-08-12 19:40:47,078 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2024-08-12 19:40:47,081 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "your-project-id"]
+2024-08-12 19:40:47,126 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-08-12 19:40:47,345 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/your-project-id?alt=json HTTP/1.1" 403 None
+2024-08-12 19:40:47,347 DEBUG    root            Chosen display Format:default
+2024-08-12 19:40:47,364 WARNING  root            [120753539852-compute@developer.gserviceaccount.com] does not have permission to access projects instance [your-project-id] (or it may not exist): Request had insufficient authentication scopes. This command is authenticated as 120753539852-compute@developer.gserviceaccount.com which is the active account specified by the [core/account] property.
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadata:
+    method: google.cloudresourcemanager.v1.Projects.GetProject
+    service: cloudresourcemanager.googleapis.com
+  reason: ACCESS_TOKEN_SCOPE_INSUFFICIENT
+2024-08-12 19:41:07,437 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

@@ -1,0 +1,18 @@
+2024-08-12 19:29:15,400 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-08-12 19:29:15,448 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2024-08-12 19:29:15,451 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "still-totality-432312-r8"]
+2024-08-12 19:29:15,490 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-08-12 19:29:15,684 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/still-totality-432312-r8?alt=json HTTP/1.1" 403 None
+2024-08-12 19:29:15,687 DEBUG    root            Chosen display Format:default
+2024-08-12 19:29:15,707 WARNING  root            [120753539852-compute@developer.gserviceaccount.com] does not have permission to access projects instance [still-totality-432312-r8] (or it may not exist): Request had insufficient authentication scopes. This command is authenticated as 120753539852-compute@developer.gserviceaccount.com which is the active account specified by the [core/account] property.
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadata:
+    method: google.cloudresourcemanager.v1.Projects.GetProject
+    service: cloudresourcemanager.googleapis.com
+  reason: ACCESS_TOKEN_SCOPE_INSUFFICIENT
+2024-08-12 19:29:18,959 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2024-08-12 19:29:18,960 DEBUG    root            Chosen display Format:default
+2024-08-12 19:29:18,961 INFO     root            Display format: "default"
+2024-08-12 19:29:18,961 DEBUG    root            SDK update checks are disabled.

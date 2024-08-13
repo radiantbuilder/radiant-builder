@@ -1,0 +1,188 @@
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 31, in <module>
+    create_instance(project_id, zone, instance_name)
+  File "/home/affiliatework2016/cloud_control.py", line 22, in create_instance
+    operation = instance_client.insert_unary(
+  File "/home/affiliatework2016/radiant_env/lib/python3.8/site-packages/google/cloud/compute_v1/services/instances/client.py", line 4003, in insert_unary
+    response = rpc(
+  File "/home/affiliatework2016/radiant_env/lib/python3.8/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/home/affiliatework2016/radiant_env/lib/python3.8/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "/home/affiliatework2016/radiant_env/lib/python3.8/site-packages/google/cloud/compute_v1/services/instances/transports/rest.py", line 3197, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.Conflict: 409 POST https://compute.googleapis.com/compute/v1/projects/still-totality-432312-r8/zones/us-central1-a/instances: The resource 'projects/still-totality-432312-r8/zones/us-central1-a/instances/radiant-instance' already exists
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 31, in <module>
+    create_instance(project_id, zone, instance_name)
+  File "/home/affiliatework2016/cloud_control.py", line 22, in create_instance
+    operation = instance_client.insert_unary(
+  File "/home/affiliatework2016/radiant_env/lib/python3.8/site-packages/google/cloud/compute_v1/services/instances/client.py", line 4003, in insert_unary
+    response = rpc(
+  File "/home/affiliatework2016/radiant_env/lib/python3.8/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/home/affiliatework2016/radiant_env/lib/python3.8/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "/home/affiliatework2016/radiant_env/lib/python3.8/site-packages/google/cloud/compute_v1/services/instances/transports/rest.py", line 3197, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.Conflict: 409 POST https://compute.googleapis.com/compute/v1/projects/still-totality-432312-r8/zones/us-central1-a/instances: The resource 'projects/still-totality-432312-r8/zones/us-central1-a/instances/radiant-instance' already exists
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'
+Traceback (most recent call last):
+  File "/home/affiliatework2016/cloud_control.py", line 1, in <module>
+    from google.cloud import compute_v1
+ModuleNotFoundError: No module named 'google'

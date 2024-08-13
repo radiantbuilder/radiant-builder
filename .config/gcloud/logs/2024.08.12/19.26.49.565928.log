@@ -1,0 +1,52 @@
+2024-08-12 19:26:49,570 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-08-12 19:26:49,624 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2024-08-12 19:26:49,626 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "RadiantBuilder"]
+2024-08-12 19:26:49,660 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-08-12 19:26:49,883 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/RadiantBuilder?alt=json HTTP/1.1" 403 None
+2024-08-12 19:26:49,886 DEBUG    root            Chosen display Format:default
+2024-08-12 19:26:49,922 WARNING  root            [120753539852-compute@developer.gserviceaccount.com] does not have permission to access projects instance [RadiantBuilder] (or it may not exist): Request had insufficient authentication scopes. This command is authenticated as 120753539852-compute@developer.gserviceaccount.com which is the active account specified by the [core/account] property.
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadata:
+    method: google.cloudresourcemanager.v1.Projects.GetProject
+    service: cloudresourcemanager.googleapis.com
+  reason: ACCESS_TOKEN_SCOPE_INSUFFICIENT
+2024-08-12 19:27:05,375 DEBUG    root            (gcloud.config.set) The project property must be set to a valid project ID, not the project name [RadiantBuilder]
+To set your project, run:
+
+  $ gcloud config set project PROJECT_ID
+
+or to unset it, run:
+
+  $ gcloud config unset project
+Traceback (most recent call last):
+  File "/snap/google-cloud-cli/260/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/260/lib/googlecloudsdk/calliope/backend.py", line 822, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/260/lib/surface/config/set.py", line 170, in Run
+    properties.PersistProperty(prop, args.value, scope=scope)
+  File "/snap/google-cloud-cli/260/lib/googlecloudsdk/core/properties.py", line 4394, in PersistProperty
+    prop.Validate(value)
+  File "/snap/google-cloud-cli/260/lib/googlecloudsdk/core/properties.py", line 4164, in Validate
+    self.__validator(value)
+  File "/snap/google-cloud-cli/260/lib/googlecloudsdk/core/properties.py", line 2410, in ProjectValidator
+    raise InvalidProjectError(
+googlecloudsdk.core.properties.InvalidProjectError: The project property must be set to a valid project ID, not the project name [RadiantBuilder]
+To set your project, run:
+
+  $ gcloud config set project PROJECT_ID
+
+or to unset it, run:
+
+  $ gcloud config unset project
+2024-08-12 19:27:05,386 ERROR    root            (gcloud.config.set) The project property must be set to a valid project ID, not the project name [RadiantBuilder]
+To set your project, run:
+
+  $ gcloud config set project PROJECT_ID
+
+or to unset it, run:
+
+  $ gcloud config unset project
