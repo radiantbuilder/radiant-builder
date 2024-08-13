@@ -22,3 +22,5 @@ INFO:root:Code executed successfully from generated_script.py.
 2024-08-13 20:30:12,263 - INFO - Code executed successfully from generated_script.py.
 INFO:root:Generating code for prompt: Write a Python script that connects to a database, retrieves data, and prints it out.
 INFO:openai:error_code=invalid_api_key error_message='Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+INFO:root:Generating code for prompt: Write a Python script that connects to a database, retrieves data, and prints it out.
+INFO:openai:error_code=invalid_api_key error_message='Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
