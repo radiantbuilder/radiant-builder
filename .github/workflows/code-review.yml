@@ -1,0 +1,18 @@
+name: Monitor Critical Files
+
+on:
+  push:
+    paths:
+      - "auto_code_executor.py"
+      - "web_interface.py"
+      - "ai_integration.py"
+      - "command_center.py"
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Send Notification
+        run: echo "Critical files were changed!" | mail -s "GitHub Alert" affiliatework2016@gmail.com
