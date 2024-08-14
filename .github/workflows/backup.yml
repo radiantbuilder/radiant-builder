@@ -1,23 +1,17 @@
-name: Automated Backup
+name: Simple Backup Workflow
 
 on:
   push:
     branches:
       - main
-  schedule:
-    - cron: '0 0 * * 0'  # Every Sunday at midnight
 
 jobs:
   backup:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out code
+    - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Create a backup branch
-      run: |
-        git config --global user.email "affiliatework2016@gmail.com"
-        git config --global user.name "radiantbuilder"
-        git checkout -b backup-$(date +%Y%m%d%H%M%S)
-        git push origin HEAD
+    - name: Print message
+      run: echo "Backup job executed"
