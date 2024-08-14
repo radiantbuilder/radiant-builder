@@ -1,0 +1,39 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run all Python scripts
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python ai_integration.py || true
+          python auto_code_executor.py || true
+          python cloud_control.py || true
+          python command_center.py || true
+          python generated_script.py || true
+          python web_interface.py || true
+
+      - name: Deploy to Cloud
+        run: |
+          gsutil rsync -r /home/affiliatework2016/ gs://radiant-builder-backup/
