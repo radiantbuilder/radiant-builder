@@ -13,8 +13,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v3  # Updated to v3 for Node.js version 20
+        with:
+          node-version: '20'
+
       - name: Set up Python
-        uses: actions/setup-python@v3  # Ensure we're using v3 to avoid deprecation issues
+        uses: actions/setup-python@v3  # Ensure Python is set to version 3.x
         with:
           python-version: '3.x'
 
