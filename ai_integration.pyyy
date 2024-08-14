@@ -1,7 +1,6 @@
 import openai
 
 # Use your actual API key
-openai.api_key = "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"
 
 def generate_code(user_prompt):
     response = openai.chat_completions.create(
