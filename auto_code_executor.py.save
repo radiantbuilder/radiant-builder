@@ -1,0 +1,21 @@
+ 'w') as file:
+                file.write(code)
+
+            # Execute the generated code
+            os.system(f"python3 {filename}")
+            logging.info(f"Code executed successfully from {filename}.")
+        except Exception as e:
+            logging.error(f"Error executing code: {e}")
+    else:
+        logging.error("No code to save or execute.")
+
+# Example prompt
+user_prompt = "Write a Python script that prints 'Hello, World!'"
+
+# Generate the code
+generated_code = generate_code(user_prompt)
+print("Generated Code:\n", generated_code)
+
+# Save and execute the code
+save_and_execute_code(generated_code)
+

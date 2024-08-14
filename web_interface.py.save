@@ -1,0 +1,20 @@
+enerate_code(user_prompt)
+        output = execute_code(generated_code)
+        return render_template("index.html", code=generated_code, output=output)
+    return render_template("index.html", code="", output="")
+
+def execute_code(code, file_name="generated_script.py"):
+    with open(file_name, "w") as code_file:
+        code_file.write(code)
+    logging.info(f"Code saved to {file_name}")
+
+    try:
+        exec(open(file_name).read())
+        logging.info(f"Code executed successfully from {file_name}.")
+        return "Code executed successfully."
+    except Exception as e:
+        logging.error(f"Error executing code: {e}")
+        return f"Error executing code: {e}"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
