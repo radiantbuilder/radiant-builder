@@ -1,31 +1,30 @@
-name: Automated Backup
+name: Example Workflow
 
 on:
   push:
     branches:
       - main
-  schedule:
-    - cron: '0 0 * * 0'  # Every Sunday at midnight
 
 jobs:
-  backup:
+  example-job:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Create a backup branch
-        run: |
-          git config --global user.email "affiliatework2016@gmail.com"
-          git config --global user.name "radiantbuilder"
-          git checkout -b backup-$(date +%Y%m%d%H%M%S)
-          git push origin HEAD
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
 
-      - name: Push backup to a different repository (Optional)
-        env:
-          BACKUP_REPO: https://github.com/radiantbuilder/radiant-builder-backup.git
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install dependencies
         run: |
-          git remote add backup ${{ env.BACKUP_REPO }}
-          git push backup HEAD:backup-$(date +%Y%m%d%H%M%S)
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run a script that requires OpenAI API key
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python your_script.py
