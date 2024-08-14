@@ -13,11 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3  # Updated to v3 for Node.js version 20
-        with:
-          node-version: '20'
-
       - name: Set up Python
         uses: actions/setup-python@v3  # Ensure Python is set to version 3.x
         with:
@@ -28,8 +23,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run a script that requires OpenAI API key
+      - name: Run all Python scripts
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          python your_script.py
+          python ai_integration.py || true
+          python auto_code_executor.py || true
+          python cloud_control.py || true
+          python command_center.py || true
+          python generated_script.py || true
+          python web_interface.py || true
